@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="82894" started-at="2018-09-10T10:00:44Z" finished-at="2018-09-10T10:02:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="82894" started-at="2018-09-10T10:00:44Z" finished-at="2018-09-10T10:02:07Z">
+      <class name="com.dbx.tests.FileUploadTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.dbx.tests.FileUploadTest@1c3a4799]" name="setup" is-config="true" duration-ms="29294" started-at="2018-09-10T18:00:44Z" finished-at="2018-09-10T18:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deletedUploadFileTest(java.lang.String, java.lang.String)[pri:0, instance:com.dbx.tests.FileUploadTest@1c3a4799]" name="deletedUploadFileTest" duration-ms="50190" started-at="2018-09-10T18:01:14Z" finished-at="2018-09-10T18:02:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nitin.ch170584+1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[L0ppy501$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletedUploadFileTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dbx.tests.FileUploadTest@1c3a4799]" name="tearDown" is-config="true" duration-ms="3272" started-at="2018-09-10T18:02:04Z" finished-at="2018-09-10T18:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dbx.tests.FileUploadTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

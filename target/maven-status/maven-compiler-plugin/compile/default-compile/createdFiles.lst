@@ -1,0 +1,7 @@
+com\page\obj\PageObject.class
+com\dbx\pages\MyFilesPage.class
+com\dbx\pages\SignInPage.class
+com\dbx\pages\MyAccountPage.class
+com\pages\utility\Constant.class
+com\dbx\pages\HomePage.class
+com\dbx\pages\DeletedFilesPage.class

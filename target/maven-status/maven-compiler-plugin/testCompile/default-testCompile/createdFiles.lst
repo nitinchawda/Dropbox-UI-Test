@@ -1,0 +1,5 @@
+com\tests\utility\Constant.class
+com\dbx\testhelper\TestHelper.class
+com\dbx\tests\FileUploadTest.class
+com\dbx\tests\CreateFolderTest.class
+com\dbx\tests\LoginTest.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+	<test verbose="2" name="Default test">
+		<parameter name="emailId" value="nitin.ch170584+1@gmail.com" />
+		<parameter name="password" value="L0ppy501$" />
+		<parameter name="email" value="nitin.ch170584+1@gmail.com" />
+		<parameter name="pass" value="L0ppy501$" />
+		<classes>
+			<class name="com.dbx.tests.LoginTest" />
+			<class name="com.dbx.tests.FileUploadTest" />
+			<class name="com.dbx.tests.CreateFolderTest" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
