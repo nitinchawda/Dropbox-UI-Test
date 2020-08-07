@@ -2,17 +2,19 @@ package com.dbx.pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
 import com.page.obj.PageObject;
 
 public class SignInPage extends PageObject {
 
-	@FindBy(css = "input[name=login_email]")
+	@FindBy(how = How.CSS, using = "input[name=login_email]")
 	WebElement loginEmail;
 
-	@FindBy(css = "input[name=login_password]")
+	@FindBy(how = How.CSS, using = "input[name=login_password]")
 	WebElement loginPassword;
 
-	@FindBy(css = "button.signin-button")
+	@FindBy(how = How.CSS, using = "button.signin-button")
 	WebElement signinButton;
 
 	public SignInPage(WebDriver driver) {

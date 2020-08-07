@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.page.obj.PageObject;
 import com.pages.utility.Constant;
@@ -25,61 +26,61 @@ public class MyAccountPage extends PageObject {
 	private static Path filepath = Paths.get(Constant.FILE_PATH);
 	private static String filename = filepath.getFileName().toString();
 	
-	@FindBy(css = "span.action-upload")
+	@FindBy(how = How.CSS, using = "span.action-upload")
 	WebElement uploadButton;
 
-	@FindBy(css = "img[alt='Account photo']")
+	@FindBy(how = How.CSS, using = "img[alt='Account photo']")
 	WebElement acntPhoto;
 
-	@FindBy(xpath = "//a[contains(text(),'Sign out')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign out')]")
 	WebElement signOutButton;
 
-	@FindBy(css = "button.action-upload-files")
+	@FindBy(how = How.CSS, using = "button.action-upload-files")
 	WebElement uploadFileButton;
 
-	@FindBy(css = "div.mc-util-modal-body")
+	@FindBy(how = How.CSS, using = "div.mc-util-modal-body")
 	WebElement modalDialogBody;
 
-	@FindBy(css = "li[aria-label='Dropbox']")
+	@FindBy(how = How.CSS, using = "li[aria-label='Dropbox']")
 	WebElement dbxLocation;
 
-	@FindBy(css = "button.mc-button-primary")
+	@FindBy(how = How.CSS, using = "button.mc-button-primary")
 	WebElement uploadBtn;
 
-	@FindBy(css = "p.mc-snackbar-title")
+	@FindBy(how = How.CSS, using = "p.mc-snackbar-title")
 	WebElement uploadStatus;
 
-	@FindBy(css = "li.recents-item")
+	@FindBy(how = How.CSS, using = "li.recents-item")
 	List<WebElement> listOfItemsAdded;
 
-	@FindBy(css = "button.action-new-shared-folder")
+	@FindBy(how = How.CSS, using = "button.action-new-shared-folder")
 	WebElement sharedFolderBtn;
 
-	@FindBy(css = "button.db-modal-x")
+	@FindBy(how = How.CSS, using = "button.db-modal-x")
 	WebElement modalDialogCloseBtn;
 
-	@FindBy(css = "input[value='new-folder']")
+	@FindBy(how = How.CSS, using = "input[value='new-folder']")
 	WebElement newFolderRadioBtn;
 
-	@FindBy(css = "button.c-btn")
+	@FindBy(how = How.CSS, using = "button.c-btn")
 	WebElement modalDialogNextBtn;
 
-	@FindBy(id = "unified-share-modal-title")
+	@FindBy(how = How.ID, using = "unified-share-modal-title")
 	WebElement sharedFolderInputField;
 
-	@FindBy(id = "unified-share-modal-contacts-tokenizer")
+	@FindBy(how = How.ID, using = "unified-share-modal-contacts-tokenizer")
 	WebElement emailInputTextArea;
 
-	@FindBy(css = "button.c-btn--primary")
+	@FindBy(how = How.CSS, using = "button.c-btn--primary")
 	WebElement shareFolderBtn;
 
-	@FindBy(css = "button.c-btn--secondary")
+	@FindBy(how = How.CSS, using = "button.c-btn--secondary")
 	WebElement sharePermissionDropBtn;
 
-	@FindBy(xpath = "//a[contains(.,'Can view')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(.,'Can view')]")
 	WebElement canViewPermissionBtn;
 
-	@FindBy(css = "span.uee-ProductNav-files")
+	@FindBy(how = How.CSS, using = "span.uee-ProductNav-files")
 	WebElement goToMyFilesPageLink;
 	
 	public boolean folderCreationModalDialogInitialized() {

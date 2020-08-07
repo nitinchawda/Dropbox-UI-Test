@@ -3,15 +3,16 @@ package com.dbx.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import com.page.obj.PageObject;
 
 public class HomePage extends PageObject {
 
-	@FindBy(css = "img.dropbox-logo__type")
+	@FindBy(how = How.CSS, using = "img.dropbox-logo__type")
 	WebElement dbxLogo;
 
-	@FindBy(id = "sign-up-in")
+	@FindBy(how = How.ID, using = "sign-up-in")
 	WebElement signIn;
 
 	public HomePage(WebDriver driver) {

@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.page.obj.PageObject;
@@ -22,10 +23,10 @@ public class DeletedFilesPage extends PageObject {
 	private static Path filepath = Paths.get(Constant.FILE_PATH);
 	private static String filename = filepath.getFileName().toString();
 
-	@FindBy(css = "tr.mc-media-row")
+	@FindBy(how = How.CSS, using = "tr.mc-media-row")
 	List<WebElement> listOfFileName;
 
-	@FindBy(css = "table[role=table]")
+	@FindBy(how = How.CSS, using = "table[role=table]")
 	WebElement tableOfItems;
 
 	public boolean isTableDisplayed() {
